@@ -1,0 +1,330 @@
+aid: scenario-gg
+url: https://raw.githubusercontent.com/api-evangelist/scenario-gg/refs/heads/main/apis.yml
+apis:
+- aid: scenario-gg:scenario-models-api
+  name: Scenario Models API
+  tags:
+  - AI
+  - Game Assets
+  - Image Generation
+  - Models
+  - Custom Training
+  humanURL: https://docs.scenario.com/reference/getmodels
+  baseURL: https://api.cloud.scenario.com/v1
+  properties:
+  - url: https://docs.scenario.com/reference/getmodels
+    type: Documentation
+  - url: https://docs.scenario.com/reference/getmodelsbymodelid
+    type: Documentation
+  description: List, inspect, and manage custom and base AI models available to a Scenario account. Returns
+    training status, training progress, model type (image, video, audio, 3D), and metadata for the 500+ base
+    models and any LoRA models trained on a team's reference art. Custom training typically completes in 30
+    minutes to one hour from 10-50+ reference images.
+- aid: scenario-gg:scenario-generation-api
+  name: Scenario Generation API
+  tags:
+  - AI
+  - Game Assets
+  - Image Generation
+  - Generation
+  - Img2Img
+  - ControlNet
+  humanURL: https://docs.scenario.com/reference/postgeneratecustom
+  baseURL: https://api.cloud.scenario.com/v1
+  properties:
+  - url: https://docs.scenario.com/reference/postgeneratecustom
+    type: Documentation
+  - url: https://docs.scenario.com/docs/image-to-image
+    type: Documentation
+  - url: https://docs.scenario.com/docs/controlnet
+    type: Documentation
+  - url: https://docs.scenario.com/docs/3d-model-generation
+    type: Documentation
+  description: Generate game-ready images, video, audio, and 3D assets from text prompts, reference images, or
+    ControlNet guides. Supports text-to-image, image-to-image, ControlNet (txt2img and img2img), text-to-3D,
+    image-to-3D, and modality-specific endpoints for video and audio. Accepts prompt, negative prompt,
+    numSamples, guidance, numInferenceSteps, width, height, and modelId; returns an async job that resolves
+    into one or more assets. A dryRun parameter returns the compute-unit cost without executing the job.
+- aid: scenario-gg:scenario-jobs-api
+  name: Scenario Jobs API
+  tags:
+  - AI
+  - Game Assets
+  - Jobs
+  - Async
+  humanURL: https://docs.scenario.com/reference/getjobsbyjobid
+  baseURL: https://api.cloud.scenario.com/v1
+  properties:
+  - url: https://docs.scenario.com/reference/getjobsbyjobid
+    type: Documentation
+  description: Inspect the status, progress, metadata, and output assets of an asynchronous generation or
+    training job. Generation and training requests return a jobId immediately; clients poll the Jobs API (or
+    receive a webhook callback) to retrieve the final assets once the job reaches a terminal state.
+- aid: scenario-gg:scenario-assets-api
+  name: Scenario Assets API
+  tags:
+  - AI
+  - Game Assets
+  - Assets
+  - Storage
+  humanURL: https://docs.scenario.com/reference/getassets
+  baseURL: https://api.cloud.scenario.com/v1
+  properties:
+  - url: https://docs.scenario.com/reference/getassets
+    type: Documentation
+  - url: https://docs.scenario.com/reference/getassetsbyassetid
+    type: Documentation
+  - url: https://docs.scenario.com/reference/getpublicassetsbyassetid
+    type: Documentation
+  - url: https://docs.scenario.com/docs/uploading-images
+    type: Documentation
+  description: List, retrieve, upload, and manage the images, video, audio, and 3D assets stored in a team's
+    Scenario workspace. Includes endpoints for project-private assets, public asset retrieval, and asset
+    upload for use as reference images, training data, or ControlNet inputs. All assets carry full
+    commercial-use licensing for paid-plan accounts.
+- aid: scenario-gg:scenario-usage-api
+  name: Scenario Usage API
+  tags:
+  - AI
+  - Game Assets
+  - Usage
+  - FinOps
+  humanURL: https://docs.scenario.com/reference/getusages
+  baseURL: https://api.cloud.scenario.com/v1
+  properties:
+  - url: https://docs.scenario.com/reference/getusages
+    type: Documentation
+  description: Retrieve unified compute-unit consumption for an account, filtered by date range, project, or
+    model. Compute units match the metering used by the Scenario web application and are consumed by both
+    generation jobs and custom training jobs.
+name: Scenario
+tags:
+- AI
+- Artificial Intelligence
+- Game Assets
+- Game Development
+- Generative AI
+- Image Generation
+- Video Generation
+- Audio Generation
+- 3D Assets
+- Custom Model Training
+- LoRA
+- ControlNet
+- Creative AI
+- Asset Pipeline
+kind: contract
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+common:
+- type: Portal
+  url: https://www.scenario.com
+- type: Documentation
+  url: https://docs.scenario.com
+- url: https://docs.scenario.com/docs/welcome-to-scenario-api
+  name: Welcome to the Scenario API
+  type: GettingStarted
+- url: https://docs.scenario.com/docs/api-key-and-authentication
+  name: API Key and Authentication
+  type: Authentication
+- url: https://docs.scenario.com/docs/step-1-obtain-your-api-key
+  name: Obtain Your API Key
+  type: GettingStarted
+- url: https://help.scenario.com/en/articles/overviewing-the-api/
+  name: Overviewing the API
+  type: Documentation
+- url: https://help.scenario.com/en/articles/creating-an-api-key/
+  name: Creating an API Key
+  type: Documentation
+- url: https://www.scenario.com/features/api
+  name: Scenario REST API
+  type: Documentation
+- url: https://www.scenario.com/features/train
+  name: Custom Model Training
+  type: Documentation
+- url: https://cdn.cloud.scenario.com/static/api/swagger.yaml
+  name: Scenario OpenAPI Specification
+  type: OpenAPI
+- url: https://app.scenario.com
+  name: Scenario Web App
+  type: Portal
+- url: https://app.scenario.com/signup
+  type: SignUp
+- url: https://www.linkedin.com/company/scenario-com
+  type: LinkedIn
+- url: https://github.com/scenario-labs
+  type: GitHubOrganization
+- url: https://github.com/scenario-labs/Scenario-Unity
+  name: Scenario Unity Plugin
+  type: SDK
+- url: https://github.com/scenario-labs/LTX-2
+  name: LTX-2 Audio-Video Generative Model
+  type: SDK
+- url: https://github.com/scenario-labs/diffusers
+  name: Diffusers (state-of-the-art diffusion models)
+  type: SDK
+- url: https://github.com/scenario-labs/PowerPaint
+  name: PowerPaint Inpainting
+  type: SDK
+- url: https://github.com/scenario-labs/FastSAM
+  name: FastSAM (Fast Segment Anything)
+  type: SDK
+- url: https://github.com/scenario-labs/ai-toolkit
+  name: AI Toolkit (Stable Diffusion utilities)
+  type: SDK
+- url: https://github.com/scenario-labs/model-police
+  name: Model Police (model checkpoint validator)
+  type: Tool
+- url: https://github.com/scenario-labs/awesome-blender-script
+  name: Awesome Blender Script
+  type: CodeExamples
+- url: https://www.scenario.com/pricing
+  data:
+  - id: starter
+    name: Starter
+    entries:
+    - geo: US
+      unit: 1
+      label: Monthly
+      limit: 1
+      price: 15
+      metric: user
+      timeFrame: month
+      description: Standard compute, single-user workspace, 1,500 monthly credits.
+    - geo: US
+      unit: 1
+      label: Annual
+      limit: 1
+      price: 10
+      metric: user
+      timeFrame: month
+      description: Annual billing at $10/mo (33% savings).
+    elements:
+    - name: 1,500 monthly credits
+    - name: Standard compute
+    - name: Single user workspace
+    - name: 65+ core AI models
+    - name: Private generations
+    - name: Community Discord support
+    - name: 50 GB storage
+    description: Entry-level plan for individual creators.
+  - id: pro
+    name: Pro
+    entries:
+    - geo: US
+      unit: 1
+      label: Monthly
+      limit: 1
+      price: 45
+      metric: user
+      timeFrame: month
+    - geo: US
+      unit: 1
+      label: Annual
+      limit: 1
+      price: 30
+      metric: user
+      timeFrame: month
+      description: Annual billing at $30/mo (33% savings).
+    elements:
+    - name: 5,000 monthly credits
+    - name: Priority queue
+    - name: Custom model training
+    - name: 30+ advanced editing models
+    - name: API access
+    - name: Ticket support
+    - name: 500 GB storage
+    description: For professional creators training custom models and using the API.
+  - id: max
+    name: Max
+    entries:
+    - geo: US
+      unit: 1
+      label: Monthly
+      limit: 1
+      price: 75
+      metric: user
+      timeFrame: month
+    - geo: US
+      unit: 1
+      label: Annual
+      limit: 1
+      price: 50
+      metric: user
+      timeFrame: month
+      description: Annual billing at $50/mo (33% savings).
+    elements:
+    - name: 10,000 monthly credits
+    - name: Up to 25 seats
+    - name: Team collaboration tools
+    - name: Custom editing model training
+    - name: Monitoring dashboards
+    - name: High-priority queue
+    - name: 1 TB storage (+1 TB per additional seat)
+    description: For small teams collaborating on custom asset pipelines.
+  - id: enterprise
+    name: Enterprise
+    entries:
+    - geo: US
+      unit: 1
+      label: Custom
+      limit: 1
+      price: Call
+      metric: user
+      timeFrame: month
+      description: Custom pricing, 10-user minimum, annual billing required.
+    elements:
+    - name: Enterprise SSO
+    - name: SOC 2 Type II
+    - name: Governance and audit trail
+    - name: Dedicated account team
+    - name: Slack support
+    - name: Advanced dashboards
+    - name: Custom integrations
+    - name: 10 TB storage (+1 TB per seat)
+    description: For studios and enterprises with security, compliance, and governance requirements.
+  name: Plans
+  type: Plans
+- type: Features
+  data:
+  - 500+ AI models across image, video, audio, and 3D from 50+ providers in a single workspace
+  - Custom LoRA model training on a team's reference art (10-50+ reference images, 30 min - 1 hr training)
+  - Text-to-image, image-to-image, ControlNet (txt2img and img2img), text-to-3D, image-to-3D generation
+  - Video and audio generation including the in-house LTX-2 audio-video model
+  - Asset editing: background removal, upscaling, vectorization, inpainting (PowerPaint), segmentation (FastSAM)
+  - Visual workflow builder for batch generation and asset-pipeline automation
+  - Pre-built apps for common creative tasks (character art, environments, UI, marketing creatives)
+  - REST API with Basic Auth (Base64-encoded API key:secret) for programmatic generation, training, and asset management
+  - Asynchronous job model with polling via /jobs and webhook callbacks
+  - dryRun parameter for cost estimation before executing generation jobs
+  - Unified compute-unit metering matching the web app pricing
+  - Official Unity plugin for in-engine generation
+  - Open-source companion projects: diffusers, LTX-2, PowerPaint, FastSAM, ai-toolkit, model-police
+  - Full commercial licensing for generated assets on all paid plans
+  - Enterprise SSO, SOC 2 Type II, governance, audit trail, custom integrations
+  - Studio customers including Ubisoft, Unity, Scopely, and many mobile game developers
+  sources:
+  - https://www.scenario.com
+  - https://docs.scenario.com
+  - https://docs.scenario.com/docs/api-key-and-authentication
+  - https://www.scenario.com/features/api
+  - https://www.scenario.com/features/train
+  - https://www.scenario.com/pricing
+  - https://github.com/scenario-labs
+  updated: '2026-05-25'
+created: '2026-05-25T00:00:00.000Z'
+modified: '2026-05-25'
+position: Consuming
+description: Scenario is a Paris- and San Francisco-headquartered AI platform for game asset generation
+  founded in 2021 by Emmanuel de Maistre and Hervé Nivon. The Scenario REST API lets game studios and
+  creative teams generate consistent, on-brand images, video, audio, and 3D assets, train custom LoRA models
+  on their own reference art, automate batch asset pipelines, and integrate AI-generated visuals into
+  production tools like Unity. Scenario aggregates 500+ AI models from 50+ providers behind a single
+  workspace and API, with full commercial licensing for generated assets and enterprise SSO, SOC 2 Type II,
+  and governance controls.
+maintainers:
+- FN: Kin Lane
+  email: info@apievangelist.com
+  X: apievangelist
+  url: https://apievangelist.com
+specificationVersion: '0.16'
