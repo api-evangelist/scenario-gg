@@ -149,32 +149,32 @@ common:
   name: Scenario Web App
   type: Portal
 - url: https://app.scenario.com/signup
-  type: SignUp
+  type: Signup
 - url: https://www.linkedin.com/company/scenario-com
   type: LinkedIn
 - url: https://github.com/scenario-labs
   type: GitHubOrganization
 - url: https://github.com/scenario-labs/Scenario-Unity
   name: Scenario Unity Plugin
-  type: SDK
+  type: SDKs
 - url: https://github.com/scenario-labs/LTX-2
   name: LTX-2 Audio-Video Generative Model
-  type: SDK
+  type: SDKs
 - url: https://github.com/scenario-labs/diffusers
   name: Diffusers (state-of-the-art diffusion models)
-  type: SDK
+  type: SDKs
 - url: https://github.com/scenario-labs/PowerPaint
   name: PowerPaint Inpainting
-  type: SDK
+  type: SDKs
 - url: https://github.com/scenario-labs/FastSAM
   name: FastSAM (Fast Segment Anything)
-  type: SDK
+  type: SDKs
 - url: https://github.com/scenario-labs/ai-toolkit
   name: AI Toolkit (Stable Diffusion utilities)
-  type: SDK
+  type: SDKs
 - url: https://github.com/scenario-labs/model-police
   name: Model Police (model checkpoint validator)
-  type: Tool
+  type: Tools
 - url: https://github.com/scenario-labs/awesome-blender-script
   name: Awesome Blender Script
   type: CodeExamples
