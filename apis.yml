@@ -117,6 +117,10 @@ kind: contract
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 common:
+- type: TrustCenter
+  url: security/scenario-gg-trust-center.yml
+- type: DomainSecurity
+  url: security/scenario-gg-domain-security.yml
 - type: Portal
   url: https://www.scenario.com
 - type: Documentation

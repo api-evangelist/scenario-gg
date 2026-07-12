@@ -1,0 +1,12 @@
+generated: '2026-07-11'
+method: searched
+probe: true
+source: https://trust.scenario.com/
+url: https://trust.scenario.com/
+certifications:
+- SOC 2
+evidence:
+- source: https://trust.scenario.com/
+  keywords:
+  - soc 2
+  - soc2
