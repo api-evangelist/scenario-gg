@@ -4,6 +4,12 @@ apis:
 - aid: scenario-gg:scenario-models-api
   name: Scenario Models API
   tags:
+  - Artificial Intelligence
+  - Game Assets
+  - Image-Generation
+  - Models
+  - Custom Training
+  tags_raw:
   - AI
   - Game Assets
   - Image Generation
@@ -23,6 +29,13 @@ apis:
 - aid: scenario-gg:scenario-generation-api
   name: Scenario Generation API
   tags:
+  - Artificial Intelligence
+  - Game Assets
+  - Image-Generation
+  - Generation
+  - Img2Img
+  - ControlNet
+  tags_raw:
   - AI
   - Game Assets
   - Image Generation
@@ -48,6 +61,11 @@ apis:
 - aid: scenario-gg:scenario-jobs-api
   name: Scenario Jobs API
   tags:
+  - Artificial Intelligence
+  - Game Assets
+  - Job
+  - Async
+  tags_raw:
   - AI
   - Game Assets
   - Jobs
@@ -63,6 +81,11 @@ apis:
 - aid: scenario-gg:scenario-assets-api
   name: Scenario Assets API
   tags:
+  - Artificial Intelligence
+  - Game Assets
+  - Assets
+  - Storage
+  tags_raw:
   - AI
   - Game Assets
   - Assets
@@ -85,6 +108,11 @@ apis:
 - aid: scenario-gg:scenario-usage-api
   name: Scenario Usage API
   tags:
+  - Artificial Intelligence
+  - Game Assets
+  - Usage
+  - FinOps
+  tags_raw:
   - AI
   - Game Assets
   - Usage
@@ -99,6 +127,20 @@ apis:
     generation jobs and custom training jobs.
 name: Scenario
 tags:
+- Artificial Intelligence
+- Game Assets
+- Game Development
+- Generative AI
+- Image-Generation
+- Video Generation
+- Audio Generation
+- 3D Assets
+- Custom Model Training
+- LoRA
+- ControlNet
+- Creative AI
+- Asset Pipeline
+tags_raw:
 - AI
 - Artificial Intelligence
 - Game Assets
