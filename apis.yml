@@ -181,6 +181,8 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scenario-gg.png
 access: 3rd-Party
 common:
+- type: Website
+  url: https://www.scenario.com/
 - type: TrustCenter
   url: security/scenario-gg-trust-center.yml
 - type: DomainSecurity
