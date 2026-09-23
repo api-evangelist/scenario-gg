@@ -1,0 +1,29 @@
+# Front Door AI Index — scenario-gg — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: scenario-gg
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.scenario.com
+  final_host: www.scenario.com
+  ownership: own
+  owner: scenario-gg
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 32
+  host_score: 32
+  density: 12.82
+  words: 2496
+  tiers:
+    agentic: 6
+    core: 25
+    model: 1
+  ambiguous: 4
+  top_terms:
+    AI: 25
+    MCP: 4
+    agent: 4
+    prompts: 2
+    Gemini: 1
