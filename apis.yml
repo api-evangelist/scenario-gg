@@ -6,7 +6,7 @@ apis:
   tags:
   - Artificial Intelligence
   - Game Assets
-  - Image-Generation
+  - Image Generation
   - Models
   - Custom Training
   tags_raw:
@@ -15,6 +15,7 @@ apis:
   - Image Generation
   - Models
   - Custom Training
+  - Image-Generation
   humanURL: https://docs.scenario.com/reference/getmodels
   baseURL: https://api.cloud.scenario.com/v1
   properties:
@@ -31,7 +32,7 @@ apis:
   tags:
   - Artificial Intelligence
   - Game Assets
-  - Image-Generation
+  - Image Generation
   - Generation
   - Img2Img
   - ControlNet
@@ -42,6 +43,7 @@ apis:
   - Generation
   - Img2Img
   - ControlNet
+  - Image-Generation
   humanURL: https://docs.scenario.com/reference/postgeneratecustom
   baseURL: https://api.cloud.scenario.com/v1
   properties:
@@ -131,7 +133,7 @@ tags:
 - Game Assets
 - Game Development
 - Generative AI
-- Image-Generation
+- Image Generation
 - Video Generation
 - Audio Generation
 - 3D Assets
@@ -155,6 +157,7 @@ tags_raw:
 - ControlNet
 - Creative AI
 - Asset Pipeline
+- Image-Generation
 kind: contract
 deliveryModel:
   model: saas
