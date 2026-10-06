@@ -184,6 +184,8 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scenario-gg.png
 access: 3rd-Party
 common:
+- url: https://www.scenario.com/blog
+  type: Blog
 - type: Website
   url: https://www.scenario.com/
 - type: TrustCenter
@@ -386,7 +388,7 @@ common:
   - https://github.com/scenario-labs
   updated: '2026-05-25'
 created: '2026-05-25T00:00:00.000Z'
-modified: '2026-05-25'
+modified: '2026-10-06'
 position: Consuming
 description: Scenario is a Paris- and San Francisco-headquartered AI platform for game asset generation
   founded in 2021 by Emmanuel de Maistre and Hervé Nivon. The Scenario REST API lets game studios and
