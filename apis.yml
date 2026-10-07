@@ -184,6 +184,10 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scenario-gg.png
 access: 3rd-Party
 common:
+- type: Pricing
+  url: https://www.scenario.com/
+- type: Plans
+  url: plans/scenario-gg-plans-pricing.yml
 - url: https://www.scenario.com/blog
   type: Blog
 - type: Website
