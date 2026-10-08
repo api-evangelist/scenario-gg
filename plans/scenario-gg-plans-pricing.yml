@@ -44,3 +44,42 @@ plans:
   included_quota: Tied to your needs
 rate_limit_statements:
 - 50 free daily credits
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - metered
+  units:
+  - credit
+  plans:
+  - name: Starter
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - credit
+    periods:
+    - month
+  - name: Pro
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - credit
+    periods:
+    - month
+  - name: Max
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - credit
+    periods:
+    - month
+  - name: Enterprise
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
