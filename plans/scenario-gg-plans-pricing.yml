@@ -1,0 +1,46 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.scenario.com/
+sources:
+- https://www.scenario.com/
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T112025
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+  managed_tier: Starter
+published: true
+note: Homepage with pricing section; monthly and annual (Save 33%) prices shown together.
+plan_count: 4
+currency: USD
+plans:
+- name: Starter
+  price_text: $15 $10 /mo
+  currency: USD
+  period: month
+  unit: 1,500 monthly credits
+  included_quota: 1,500 monthly credits
+- name: Pro
+  price_text: $45 $30 /mo
+  currency: USD
+  period: month
+  unit: 5,000 monthly credits
+  included_quota: 5,000 monthly credits
+- name: Max
+  price_text: $75 $50 /mo
+  currency: USD
+  period: month
+  unit: 10,000 monthly credits
+  included_quota: 10,000 monthly credits
+- name: Enterprise
+  price_text: Custom
+  period: none
+  included_quota: Tied to your needs
+rate_limit_statements:
+- 50 free daily credits
